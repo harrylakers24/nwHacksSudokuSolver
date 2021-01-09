@@ -64,13 +64,13 @@ public class class1 {
     }
 
     public static boolean IsSafe(int [][] matrix, int value, int rowIndex, int columnIndex, int n){
-        //row check
+        //row checks
         for (int j = 0; j < 9; j++) {
             if(matrix[rowIndex][j] == value){
                 return  false;
             }
         }
-        //column check
+        //column checks
         for (int i = 0; i < 9; i++) {
             if(matrix[i][columnIndex] == value){
                 return  false;
